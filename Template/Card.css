@@ -9,7 +9,7 @@
 	margin: 0 0.2rem 0.4rem 0.2rem;
 	background-color: var( --color-surface-1 );
 	border: 1px solid var( --border-color-base );
-	border-radius: var( --border-radius--medium );
+	border-radius: var( --border-radius-medium );
 	box-shadow: 0 1px 3px rgba( 0, 0, 0, 0.03 ), 0 1px 2px rgba( 0, 0, 0, 0.06 );
 	font-size: 0.875rem;
 	transition: box-shadow 0.2s ease;
@@ -80,7 +80,7 @@
 .card .card-title {
 	margin-top: 0;
 	margin-bottom: 0.8rem;
-	color: var( --color-base--emphasized );
+	color: var( --color-emphasized );
 	font-size: 1.25rem;
 	font-weight: 600;
 	line-height: 1.2;
@@ -126,7 +126,7 @@
 
 .card-button {
 	background: var( --color-base );
-	border-radius: 0 0 var( --border-radius--medium ) var( --border-radius--medium );
+	border-radius: 0 0 var( --border-radius-medium ) var( --border-radius-medium );
 	transition: opacity 0.2s ease;
 }
 
