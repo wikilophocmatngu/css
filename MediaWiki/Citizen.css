@@ -1,0 +1,307 @@
+/***********************/
+/******BEGIN TEST*******/
+/***********************/
+
+.mw-indicators {
+    font-size: 1.5rem;
+	filter: unset !important;
+	padding-bottom: 10px;
+}
+
+.mw-indicator {
+	filter: unset !important;
+}
+
+#mw-indicator-protection-sysop .mw-protection-indicator-icon--lock { /* Bảo quản viên */
+	background-image: url(https://upload.wikimedia.org/wikipedia/commons/b/b5/Logo-indef-full-protection.svg);
+}
+
+#mw-indicator-protection-autoconfirmed .mw-protection-indicator-icon--lock { /* Tự động xác nhận */
+	background-image: url(https://upload.wikimedia.org/wikipedia/commons/b/be/Logo-edit-extended-semi-protection.svg);
+}
+
+#mw-indicator-protection-user .mw-protection-indicator-icon--lock { /* Đăng nhập */
+	background-image: url(https://upload.wikimedia.org/wikipedia/commons/4/48/Logo-edit-semi-protection.svg);
+}
+
+.mw-protection-indicator-icon--lock {
+	vertical-align: -webkit-baseline-middle;
+	-webkit-mask-image: none;
+	mask-image: none;
+	background-color: unset;
+}
+
+#footer-sitetitle .mw-logo-wordmark {
+  width:initial !important;
+  height:60px !important;
+}
+
+img.mw-logo-wordmark {
+    width:100%;
+    height:1rem;
+    margin:0.125rem 0;
+    object-fit:contain;
+    object-position:left center;
+    filter:invert(0);
+}
+  
+#footer-info-lastmod { margin: auto }
+#footer-poweredbyico { margin-right: 10px; margin-left: -15px }
+#footer-places { width: 100% }
+#footer-desc { font-size: 14px; padding-left: 20px }
+
+.citizen-footer__content {
+	display: flex;
+	align-items: center;
+}
+
+.citizen-footer__siteinfo {
+	align-items: center;
+	justify-content: center;
+	vertical-align: middle;
+	max-width: 100%;
+	display: flex;
+	flex-direction: row!important;
+	margin-top: -15px
+}
+
+#footer-places ul {
+	display: flex!important;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between!important;
+/* column-count: 2 */
+}
+
+#footer-places a {
+	text-align: center;
+}
+
+#footer-sitetitle .mw-logo-wordmark {
+	width: initial !important;
+	height: 70px !important;
+}
+
+.citizen-footer a, #footer-sitetitle, .catlinks a, .citizen-header a, .citizen-page-header a {
+	transition: .5s all;
+}
+
+.citizen-footer a:hover, #footer-sitetitle:hover, .catlinks a:hover, .citizen-header a:hover, .citizen-page-header a:hover {
+	filter: drop-shadow( 0 0 16px var( --color-progressive ) );
+	font-weight: bold;
+	transition: .5s all;
+}
+
+/***********************/
+/*******END TEST********/
+/***********************/
+.mw-portlet-Tài_nguyên_từ_chúng_tôi,
+.mw-portlet-_sidebar-label-donate {
+	position: sticky;
+    bottom: 0;
+    margin-top: var(--space-md);
+    padding: var(--space-xs) 0;
+    border-top: 1px solid var(--border-color-base);
+    background: var(--color-surface-1);
+    font-size: var(--font-size-x-small);
+    grid-column-start: 1;
+    white-space: nowrap;
+}
+.citizen-drawer__menu {
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+
+@media screen and ( min-width: 32.875rem ) {
+    .mw-portlet-Tài_nguyên_từ_chúng_tôi,
+    .mw-portlet-_sidebar-label-donate {
+		grid-column-end: span 2;
+	}
+}
+
+.mw-portlet-Tài_nguyên_từ_chúng_tôi .citizen-menu__heading,
+.mw-portlet-_sidebar-label-donate .citizen-menu__heading{
+	display: none;
+}
+
+.mw-portlet-Tài_nguyên_từ_chúng_tôi ul,
+.mw-portlet-_sidebar-label-donate ul {
+	display: flex;
+	overflow: auto;
+}
+
+.mw-portlet-Tài_nguyên_từ_chúng_tôi .mw-list-item a,
+.mw-portlet-_sidebar-label-donate .mw-list-item a {
+	gap: 0;
+}
+
+/* PageForm */
+.select2-container--default .select2-selection--multiple .select2-selection__choice,
+.select2-container--default .select2-selection--multiple {
+	background-color: transparent !important;
+}
+
+/* minor stuff */
+hr {
+	border-top: 10px solid var(--border-color-base--darker);
+}
+
+/* Move main page page actions to the bottom of the page */
+.page-WLHMN .citizen-body-container {
+	grid-template-areas:
+        'content'
+        'header'
+        'footer';
+    gap: unset !important;
+}
+
+/* Label */
+.citizen-drawer__menu [id^="n-sidebar-label-"] a {
+	pointer-events: none;
+    margin-left: var( --space-xs );
+    padding-left: var( --space-md );
+	padding-right: var( --space-xs );
+	border-left: 1px solid var( --border-color-base );
+    border-radius: 0;
+    letter-spacing: 0.05em;
+    font-weight: var( --font-weight-normal );
+    color: var( --color-base--subtle ) !important;
+}
+
+/* Icons */
+.citizen-drawer__menu [id^="n-sidebar-icon-"] a {
+	font-size: 0;
+}
+
+.citizen-drawer__menu [id^="n-sidebar-icon-"] a:before {
+	display: block;
+    content: "";
+    width: 1rem;
+    height: 1rem;
+    background: transparent center/contain no-repeat;
+    opacity: var( --opacity-icon-base );
+}
+
+.citizen-drawer__menu [id^="n-sidebar-icon-"] a:before,
+.citizen-drawer__menu #n-articlewizard a:before,
+.skin-citizen-dark .AWimg{
+  filter: var( --filter-invert );
+}
+
+.citizen-drawer__menu #n-articlewizard a:before {
+  content: url(https://static.miraheze.org/lhmnwiki/9/97/ArticleWizard.svg);
+  width: var(--size-icon);
+  height: var(--size-icon);
+  opacity: var(--opacity-icon-base);
+}
+
+#n-sidebar-icon-discord a:before {
+	background-image: url( https://static.miraheze.org/lhmnwiki/7/77/Discord_-_Simple_Icons.svg )
+}
+
+#n-sidebar-icon-facebook a:before {
+	background-image: url( https://static.miraheze.org/lhmnwiki/c/c8/Facebook_-_Simple_Icons.svg )
+}
+
+#n-sidebar-icon-kofi a:before {
+	background-image: url( https://static.miraheze.org/lhmnwiki/4/48/Kofi_-_Simple_Icons.svg )
+}
+
+#n-sidebar-icon-nguyet a:before {
+	background-image: url( https://static.miraheze.org/lhmnwiki/9/9c/NguYet.svg )
+}
+
+#n-sidebar-icon-hsck a:before {
+	background-image: url( https://static.miraheze.org/lhmnwiki/d/d4/Hsck_-_SVG_Repo.svg )
+}
+
+#n-sidebar-icon-github a:before {
+	background-image: url( https://static.miraheze.org/lhmnwiki/9/91/Github.svg )
+}
+
+#n-sidebar-icon-paypal a:before {
+	background-image: url( https://static.miraheze.org/lhmnwiki/6/64/Paypal.svg )
+}
+
+#n-sidebar-icon-momo a:before {
+	background-image: url( https://static.miraheze.org/lhmnwiki/b/b9/MoMo_icon.svg )
+}
+
+#n-sidebar-icon-vietqr a:before {
+	background-image: url( https://static.miraheze.org/lhmnwiki/b/b9/Vietqr.svg )
+}
+
+/* CookieWarning tweaks */
+.mw-cookiewarning-container {
+	max-width: 480px;
+}
+
+.mw-cookiewarning-text {
+	gap: var(--space-xs);
+}
+
+.mw-cookiewarning-text::before {
+	content: '🍪';
+    font-size: 2rem;
+}
+
+/* hide on pageload to prevent FoUC */
+.client-js .mw-cookiewarning-container {
+	opacity: 0;
+	visibility: hidden;
+	transition: opacity 250ms ease, visibility 250ms ease;
+}
+
+/* citizen-animations-ready is added when scripts are loaded */
+.client-js.citizen-animations-ready .mw-cookiewarning-container {
+	opacity: 1;
+	visibility: visible;
+}
+
+/*
+ * Footer icons
+ * We use custom footer icons so we need to fine tune it
+*/
+#footer-icons a {
+	opacity: var( --opacity-icon-base );
+	transition: opacity 250ms ease;
+}
+
+#footer-icons a:hover {
+	opacity: var( --opacity-icon-base--hover );
+}
+
+#footer-icons a:active {
+	opacity: var( --opacity-icon-base--active );
+}
+
+/* Fix misalignment in Safari and Firefox when using two columns */
+#footer-places ul {
+	display: initial;
+}
+
+/* Darken the footer icon in light mode */
+.skin-citizen-light #footer-icons a {
+	filter: var( --filter-invert );
+}
+
+img.mw-logo-wordmark {
+	filter: unset !important;
+}
+
+/* Tạm thời dùng mã này cho đến khi StarCitizen sửa được RelatedArticle */
+
+.cdx-card {
+    background-color: var(--color-surface-4);
+    border-radius: var(--border-radius--small);
+}
+.cdx-card__text__title {
+    color: var(--color-base--emphasized);
+}
+.cdx-card__text__description, .cdx-card__text__supporting-text, .cdx-card__text__description .cdx-icon, .cdx-card__text__supporting-text .cdx-icon{
+    color: var(--color-base--subtle);
+}
+
+.cdx-thumbnail__placeholder, .cdx-thumbnail__image {
+	border: 1px solid var(--border-color-base);
+}
