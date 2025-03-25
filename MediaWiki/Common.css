@@ -1,0 +1,64 @@
+/* Mã CSS đặt ở đây sẽ áp dụng cho mọi giao diện */
+
+/* Kích hoạt cài đặt CSS từ các trang chứa CSS khác trong Wiki */
+@import url('/w/index.php?title=MediaWiki:Fonts.css&amp;action=raw&amp;ctype=text/css');
+@import url('/w/index.php?title=MediaWiki:Infobox.css&amp;action=raw&amp;ctype=text/css');
+@import url('/w/index.php?title=MediaWiki:Social.css&amp;action=raw&amp;ctype=text/css');
+
+a.cdx-button.cdx-button--fake-button.cdx-button--size-large.cdx-button--fake-button--enabled {
+    background-color: unset !important;
+    color: unset !important;
+    border: unset !important;
+}
+
+/* Dành cho vị lãnh đạo của dân tộc!
+   Đoạn mã này sẽ chỉ được kích hoạt khi quốc tang xảy ra.
+   
+.mw-logo-icon,
+.citizen-body-container {
+    filter: grayscale(1);
+}
+
+*/
+
+.visualClear { /* Sửa lỗi hiển thị cho SocialProfile */
+	clear: both;
+}
+
+/* Mã này tùy chỉnh các ô nhân vật sao cho *đỉnh* hơn bên LHMN Offical. (Đừng dùng Google Site nữa được không BGVN ơi...) */
+
+.cwrapper {
+	align-items: center;
+}
+
+.cportraits img {
+	width: 109px;
+	height: 109px;
+	overflow: hidden;
+	border-radius: var(--border-radius--medium);
+}
+
+.cportraits img {
+	transition: transform 0.2s ease;
+}
+
+.cportraits img:hover {
+	transform: scale(1.2);
+	border-radius: var(--border-radius--small);
+}
+
+/* Tùy chỉnh nút Spoilers từ extension cùng tên */
+.spoilers-button {
+	background: none !important;
+	color: #5c85d6 !important;
+	border: 1px solid #5c85d6 !important;
+}
+
+.spoilers-body {
+	display: flex;
+}
+
+
+/**********************************************************
+*KHÔNG CHÈN BẤT CỨ ĐOẠN MÃ NÀO KHÁC DƯỚI DÒNG NÀY. CÁM ƠN.*
+**********************************************************/
