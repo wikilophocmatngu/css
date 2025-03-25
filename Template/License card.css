@@ -2,7 +2,7 @@
 	padding: 1.25rem;
 	margin-top: 0.8rem;
 	background: var( --color-surface-2 );
-	border-radius: var( --border-radius--medium );
+	border-radius: var( --border-radius-medium );
 }
 
 .license-card__icons {
@@ -14,7 +14,7 @@
 }
 
 .license-card__title {
-	color: var( --color-base--emphasized );
+	color: var( --color-emphasized );
 	font-size: 1.25rem;
 	font-weight: bold;
 	line-height: 1.2;
