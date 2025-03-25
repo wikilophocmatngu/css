@@ -165,7 +165,7 @@ hr {
     border-radius: 0;
     letter-spacing: 0.05em;
     font-weight: var( --font-weight-normal );
-    color: var( --color-base--subtle ) !important;
+    color: var( --color-subtle ) !important;
 }
 
 /* Icons */
@@ -272,7 +272,7 @@ hr {
 }
 
 #footer-icons a:active {
-	opacity: var( --opacity-icon-base--active );
+	opacity: var( --opacity-icon-base--selected );
 }
 
 /* Fix misalignment in Safari and Firefox when using two columns */
@@ -293,13 +293,13 @@ img.mw-logo-wordmark {
 
 .cdx-card {
     background-color: var(--color-surface-4);
-    border-radius: var(--border-radius--small);
+    border-radius: var(--border-radius-base);
 }
 .cdx-card__text__title {
-    color: var(--color-base--emphasized);
+    color: var(--color-emphasized);
 }
 .cdx-card__text__description, .cdx-card__text__supporting-text, .cdx-card__text__description .cdx-icon, .cdx-card__text__supporting-text .cdx-icon{
-    color: var(--color-base--subtle);
+    color: var(--color-subtle);
 }
 
 .cdx-thumbnail__placeholder, .cdx-thumbnail__image {
