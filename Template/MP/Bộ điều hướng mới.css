@@ -1,0 +1,7 @@
+#home-nav {
+	margin-top: 1rem;
+}
+
+#home-nav .home-card__foreground {
+    font-weight: var( --font-weight-medium );
+}
